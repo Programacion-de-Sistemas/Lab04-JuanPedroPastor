@@ -10,6 +10,6 @@ do
 	for poema in $2
 	do
 		RES=`grep -n $palabra $poema|cut -d":" -f1|tr "\n" " "`
-		printf "$RES\n"
+		printf " $poema : $RES\n"
 	done
 done
