@@ -9,7 +9,7 @@ do
 	printf "$palabra\n"
 	for poema in $2
 	do
-		RES=`grep -n $palabra $poema|cut -d":" -f1`
+		RES=`grep -n $palabra $poema|cut -d":" -f1|tr "\n" " "`
 		printf "$RES\n"
 	done
 done
